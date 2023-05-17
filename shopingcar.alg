@@ -1,8 +1,8 @@
 algoritmo "semnome"
-// Função : Shopping Car
+// FunÃ§Ã£o : Shopping Car
 // Autor : David Levy
 // Data : 10/05/2023
-// Seção de Declarações 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes 
 var
  //Variaveis de Login//////
  
@@ -28,7 +28,8 @@ var
  
  //Variaveis para cadastro de veiculos/////
  
- Veiculo, Vendas, Caracteristicas, Ano: INTEIRO
+ Veiculo, Venda, Caracteristicas: CARACTERE
+ Ano: INTEIRO
  VALOR: REAL
  
  ////////////////////////////////////
@@ -98,5 +99,38 @@ LOGIN <- "LCC"
          ESCREVAL("----------------------------------------------")
          ESCREVAL(CARRO10)
          ESCREVAL("**********************************************")
+         
+         SENAO
+
+         SE PRIMEIROACESSO = 2 ENTAO
+
+
+            ESCREVAL("INFORME O NOME DO VEICULO")
+            LEIA(Veiculo)
+            ESCREVAL("INFORME O ANO DO VEICULO")
+            LEIA(Ano)
+            ESCREVAL("INFORME O CARACTERISTICAS DO VEICLO")
+            LEIA(Caracteristicas)
+            ESCREVAL("INFORME O  VALOR DO VEICULOS")
+            LEIA(Valor)
+            ESCREVAL("******************")
+            ESCREVAL("VEICULO CADASTRADO")
+            ESCREVAL("VEICULO", Veiculo)
+            ESCREVAL("ANO", Ano)
+            ESCREVAL("CARACTERISTICAS", Caracteristicas)
+            ESCREVAL("VALOR", Valor)
+            ESCREVAL(" ***********************************")
+            
+            SENAO
+            
+            SE PRIMEIROACESSO = 3 ENTAO
+            
+               ESCREVAL("DIGITE 01 PARA PAGAMENTO A VISTA")
+               ESCREVAL("DIGITE 02 CARTAO DE CREDITO OU DEBITO")
+               ESCREVAL("DIGITE 03 FINANCIAMENTO")
+               ESCREVAL("DIGITE 10 PARA SAIR")
+
+
+            
          
 fimalgoritmo
